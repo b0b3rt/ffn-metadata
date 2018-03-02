@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "FFNMetadata",
+  "description": "This extension allows the user to create the body of a 'For Review' post given a fanfiction.net URL.",
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "ffpopup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+	"clipboardWrite",
+	"https://scryer.darklordpotter.net/*"
+  ]
+}
