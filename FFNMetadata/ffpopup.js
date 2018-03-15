@@ -25,6 +25,12 @@ function ComposeBody(jsonObj){
 	return body;
 }
 
+function ComposeTitle(jsonObj){
+	var title = jsonObj.title + ' by ' + jsonObj.author.name + ' - ' + jsonObj.rated;
+	
+	return title;
+}
+
 function AddToClipboard(text){
 	const input = document.createElement('textarea');
 	input.style.position = 'fixed';
